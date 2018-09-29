@@ -21,7 +21,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="qn8-eI-sIx"/>
                     <connections>
-                        <segue destination="Cge-At-82V" kind="modal" identifier="fromLToFeedVC" id="zRI-hl-yMl"/>
+                        <segue destination="Cge-At-82V" kind="presentation" identifier="fromLToFeedVC" animates="NO" id="zRI-hl-yMl"/>
                         <segue destination="XZ3-Xk-on4" kind="show" identifier="toSignupVC" id="qOE-So-XCm"/>
                     </connections>
                 </viewController>
@@ -40,7 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="HGp-y8-tUP"/>
                     </view>
                     <connections>
-                        <segue destination="Cge-At-82V" kind="modal" identifier="fromSToFeedVC" id="Vx0-3T-onG"/>
+                        <segue destination="Cge-At-82V" kind="presentation" identifier="fromSToFeedVC" animates="NO" id="Vx0-3T-onG"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toLoginVC" id="Z54-An-HdC"/>
                     </connections>
                 </viewController>
@@ -53,11 +53,13 @@
             <objects>
                 <viewController id="Cge-At-82V" customClass="FeedVC" customModule="MDBSocials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gxk-S0-c5w">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="g0a-IG-jYF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YDN-Rd-fst"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <segue destination="20D-Rp-Ufh" kind="show" identifier="toPostCreatorVC" id="ht7-AX-3BI"/>
                     </connections>
@@ -71,11 +73,15 @@
             <objects>
                 <viewController id="20D-Rp-Ufh" customClass="CreateSocialVC" customModule="MDBSocials" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5G-Y7-Zp3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="upG-x3-pN3"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <segue destination="Cge-At-82V" kind="presentation" identifier="fromPostToFeedVC" animates="NO" id="PFP-BH-32X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlQ-rv-shP" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +108,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="zRI-hl-yMl"/>
+        <segue reference="PFP-BH-32X"/>
         <segue reference="3UK-SQ-7Cq"/>
     </inferredMetricsTieBreakers>
 </document>

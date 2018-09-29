@@ -37,4 +37,38 @@ extension CreateSocialVC {
         datePicker = UIDatePicker(frame: CGRect(x: 10 + view.frame.width / 3, y: 3 * view.frame.height / 16, width: 3 * view.frame.width / 5, height: view.frame.height / 8))
         view.addSubview(datePicker)
     }
+    
+    func setupDescriptionPrompt() {
+        descriptionLabel = UILabel(frame: CGRect(x: 10, y: view.frame.height / 3 - 10, width: view.frame.width / 2 - 20, height: 45))
+        descriptionLabel.text = "Description"
+        descriptionLabel.textAlignment = .center
+        descriptionLabel.font = UIFont(name: "AmericanTypewriter", size: 20.0)
+        descriptionLabel.backgroundColor = Constants.darkBlue
+        view.addSubview(descriptionLabel)
+        
+        descriptionTextField = UITextField(frame: CGRect(x: 10, y: view.frame.height / 3 + 45, width: view.frame.width - 20, height: 70))
+        descriptionTextField.placeholder = "Description of event"
+        descriptionTextField.layer.cornerRadius = 20
+        descriptionTextField.textAlignment = .center
+        descriptionTextField.backgroundColor = .white
+        view.addSubview(descriptionTextField)
+    }
+    
+    func setupPostButton() {
+        postSocialButton = UIButton(frame: CGRect(x: view.frame.width / 2 - 30, y: view.frame.height - 50, width: 60, height: 40))
+        postSocialButton.backgroundColor = Constants.darkBlue
+        postSocialButton.setTitle("POST", for: UIControl.State())
+        postSocialButton.setTitleColor(UIColor.white, for: UIControl.State())
+        postSocialButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        postSocialButton.addTarget(self, action: #selector(handlePostSocial), for: .touchUpInside)
+        view.addSubview(postSocialButton)
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.isNavigationBarHidden = false
+        
+        self.navigationItem.title = "Feed"
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(handleCancelPost))
+        self.navigationItem.leftBarButtonItem = cancelButton
+    }
 }

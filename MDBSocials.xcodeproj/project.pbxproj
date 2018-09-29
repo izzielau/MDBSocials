@@ -30,6 +30,7 @@
 		BDF137C9215EE3FB0088AA62 /* FeedVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137C8215EE3FB0088AA62 /* FeedVCSetup.swift */; };
 		BDF137CB215EF04F0088AA62 /* CreateSocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */; };
 		BDF137CE215EF1530088AA62 /* CreateSocialVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */; };
+		BDF137D0215EFF920088AA62 /* CreateSocialVCCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137CF215EFF920088AA62 /* CreateSocialVCCamera.swift */; };
 		D5A74EF96B6566EB87B65E46 /* libPods-MDBSocialsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8A4668D00E3A98019ED899 /* libPods-MDBSocialsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		BDF137C8215EE3FB0088AA62 /* FeedVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVCSetup.swift; sourceTree = "<group>"; };
 		BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSocialVC.swift; sourceTree = "<group>"; };
 		BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSocialVCSetup.swift; sourceTree = "<group>"; };
+		BDF137CF215EFF920088AA62 /* CreateSocialVCCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSocialVCCamera.swift; sourceTree = "<group>"; };
 		DBA9E81A2EC56FA54CA99883 /* Pods-MDBSocialsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBSocialsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDBSocialsTests/Pods-MDBSocialsTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDE3E8D54A0CFCA6EB71DEB5 /* Pods-MDBSocials.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBSocials.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDBSocials/Pods-MDBSocials.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -259,6 +261,7 @@
 			children = (
 				BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */,
 				BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */,
+				BDF137CF215EFF920088AA62 /* CreateSocialVCCamera.swift */,
 			);
 			path = CreateSocialVC;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				BDF137BC215ED12D0088AA62 /* SignupVC1.swift in Sources */,
 				BDC6DF19215CA5F400CFDF17 /* AppDelegate.swift in Sources */,
 				BDF137C6215EDC260088AA62 /* FeedCell.swift in Sources */,
+				BDF137D0215EFF920088AA62 /* CreateSocialVCCamera.swift in Sources */,
 				BDF137C9215EE3FB0088AA62 /* FeedVCSetup.swift in Sources */,
 				BDF137CB215EF04F0088AA62 /* CreateSocialVC.swift in Sources */,
 				BDF137BA215ECF2C0088AA62 /* SignupVCSetup.swift in Sources */,

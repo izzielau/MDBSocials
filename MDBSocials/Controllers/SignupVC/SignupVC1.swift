@@ -34,10 +34,6 @@ class SignupVC1: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = false
-    }
-    
     @objc func handleSignup() {
         var name = ""
         var email = ""

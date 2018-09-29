@@ -30,11 +30,4 @@ extension FeedVC {
         view.addSubview(createPostButton)
     }
 
-    func setupNavigationBar() {
-        self.navigationItem.title = "Feed"
-        let logOutButton = UIBarButtonItem(title: "Log Out", style: .plain, target: self, action: #selector(handleLogOut))
-        self.navigationItem.leftBarButtonItem = logOutButton
-        let createPostButton = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(handleCreatePost))
-        self.navigationItem.rightBarButtonItem = createPostButton
-    }
 }

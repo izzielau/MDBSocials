@@ -12,6 +12,10 @@ class FeedVC: UIViewController {
     
     var postTableView: UITableView!
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
