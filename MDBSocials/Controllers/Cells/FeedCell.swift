@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PostTableViewCell: UITableViewCell {
+class FeedCell: UITableViewCell {
     var postMemberName: UILabel!
     var postEventName: UILabel!
     var postNumberInterested : UILabel!

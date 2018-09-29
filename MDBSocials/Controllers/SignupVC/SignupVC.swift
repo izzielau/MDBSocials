@@ -118,7 +118,7 @@
 //                }
 //                
 //                let ref = Database.database().reference()
-//                let userRef = ref.child("users").child(uid)
+//                let userRef = ref.child("users").child(username)
 //                let values = ["name": name, "username": username, "email": email]
 //                
 //                userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in

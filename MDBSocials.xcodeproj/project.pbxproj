@@ -27,6 +27,9 @@
 		BDF137C1215ED3820088AA62 /* LoginVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137C0215ED3820088AA62 /* LoginVC1.swift */; };
 		BDF137C3215ED3990088AA62 /* LoginVCSetup1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137C2215ED3990088AA62 /* LoginVCSetup1.swift */; };
 		BDF137C6215EDC260088AA62 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137C5215EDC260088AA62 /* FeedCell.swift */; };
+		BDF137C9215EE3FB0088AA62 /* FeedVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137C8215EE3FB0088AA62 /* FeedVCSetup.swift */; };
+		BDF137CB215EF04F0088AA62 /* CreateSocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */; };
+		BDF137CE215EF1530088AA62 /* CreateSocialVCSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */; };
 		D5A74EF96B6566EB87B65E46 /* libPods-MDBSocialsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8A4668D00E3A98019ED899 /* libPods-MDBSocialsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		BDF137C0215ED3820088AA62 /* LoginVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC1.swift; sourceTree = "<group>"; };
 		BDF137C2215ED3990088AA62 /* LoginVCSetup1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCSetup1.swift; sourceTree = "<group>"; };
 		BDF137C5215EDC260088AA62 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		BDF137C8215EE3FB0088AA62 /* FeedVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVCSetup.swift; sourceTree = "<group>"; };
+		BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSocialVC.swift; sourceTree = "<group>"; };
+		BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSocialVCSetup.swift; sourceTree = "<group>"; };
 		DBA9E81A2EC56FA54CA99883 /* Pods-MDBSocialsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBSocialsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MDBSocialsTests/Pods-MDBSocialsTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDE3E8D54A0CFCA6EB71DEB5 /* Pods-MDBSocials.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MDBSocials.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MDBSocials/Pods-MDBSocials.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,11 +209,12 @@
 		BDF137AF215DED540088AA62 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BDF137C7215EDCF10088AA62 /* DetailVC */,
 				BDF137C4215EDC160088AA62 /* Cells */,
 				BDC6DF4A215DD98300CFDF17 /* LoginVC */,
 				BDF137B3215EC41F0088AA62 /* SignupVC */,
 				BDF137B0215DED720088AA62 /* FeedVC */,
+				BDF137C7215EDCF10088AA62 /* DetailVC */,
+				BDF137CC215EF0540088AA62 /* CreateSocialVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				BDF137B1215DF0950088AA62 /* FeedVC.swift */,
+				BDF137C8215EE3FB0088AA62 /* FeedVCSetup.swift */,
 			);
 			path = FeedVC;
 			sourceTree = "<group>";
@@ -244,6 +252,15 @@
 			children = (
 			);
 			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		BDF137CC215EF0540088AA62 /* CreateSocialVC */ = {
+			isa = PBXGroup;
+			children = (
+				BDF137CA215EF04F0088AA62 /* CreateSocialVC.swift */,
+				BDF137CD215EF1530088AA62 /* CreateSocialVCSetup.swift */,
+			);
+			path = CreateSocialVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,9 +473,12 @@
 				BDF137BC215ED12D0088AA62 /* SignupVC1.swift in Sources */,
 				BDC6DF19215CA5F400CFDF17 /* AppDelegate.swift in Sources */,
 				BDF137C6215EDC260088AA62 /* FeedCell.swift in Sources */,
+				BDF137C9215EE3FB0088AA62 /* FeedVCSetup.swift in Sources */,
+				BDF137CB215EF04F0088AA62 /* CreateSocialVC.swift in Sources */,
 				BDF137BA215ECF2C0088AA62 /* SignupVCSetup.swift in Sources */,
 				BDF137B2215DF0950088AA62 /* FeedVC.swift in Sources */,
 				BDC6DF49215DD97700CFDF17 /* LoginVCSetup.swift in Sources */,
+				BDF137CE215EF1530088AA62 /* CreateSocialVCSetup.swift in Sources */,
 				BDF137C1215ED3820088AA62 /* LoginVC1.swift in Sources */,
 				BDC6DF47215DD63200CFDF17 /* Constants.swift in Sources */,
 				BDF137C3215ED3990088AA62 /* LoginVCSetup1.swift in Sources */,

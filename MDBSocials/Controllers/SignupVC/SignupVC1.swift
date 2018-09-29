@@ -70,7 +70,35 @@ class SignupVC1: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "fromSToFeedVC", sender: self)
+        /*
+        Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
+            if let error = error {
+                print(error)
+                self.displayAlert(title: "There was an error", message: "Trying to make you")
+                return
+            } else {
+
+                guard let uid = user?.user.uid else {
+                    return
+                }
+
+                let ref = Database.database().reference()
+                let userRef = ref.child("users").child(username)
+                let values = ["name": name, "username": username, "email": email]
+
+                userRef.updateChildValues(values, withCompletionBlock: { (error, ref) in
+                    if error != nil {
+                        print(error)
+                        return
+                    } else {
+                        self.ourUserID = user?.user.uid
+                    }
+                })
+            }
+         })
+         */
+        self.performSegue(withIdentifier: "fromSToFeedVC", sender: self)
+
     }
     
     func displayAlert(title: String, message: String) {
